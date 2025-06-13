@@ -48,7 +48,7 @@ jobs:
           restore-keys: ${{ runner.os }}-sonar
 
       - name: Analisis SonarCloud (Continuous Inspection)
-        uses: SonarSource/sonarcloud-github-action@master # Selalu gunakan versi terbaru atau stab
+        uses: SonarSource/sonarcloud-github-action@master # Selalu gunakan versi terbaru atau 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
