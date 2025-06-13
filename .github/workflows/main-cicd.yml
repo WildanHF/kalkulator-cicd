@@ -21,14 +21,10 @@ name: Integrasi, Tes & Inspeksi
 runs-on: ubuntu-latest
 
 steps:
-
-- name: Checkout Kode (Continuous Integration)
-
-uses: actions/checkout@v4
-
-with:
-
-fetch-depth: 0 # Diperlukan untuk analisis SonarQube yang akurat
+  - name: Checkout Kode (Continuous Integration)
+    uses: actions/checkout@v4
+    with:
+      fetch-depth: 0 # Diperlukan untuk analisis SonarQube yang akurat
 
 
 - name: Setup Node.js
