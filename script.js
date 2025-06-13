@@ -85,6 +85,6 @@ display.value = result;
 
 if (typeof module !== 'undefined' && module.exports) {
 
-module.exports = { performCalculation };
+
 
 }
